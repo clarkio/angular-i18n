@@ -30,18 +30,30 @@
             'TITLE': 'Hello',
             'FOO': 'This is a paragraph',
             'SPLASH_MSG': 'Loading...',
-            'MESSAGE_COUNT': '{{messageCount}} Messages'
+            'MESSAGE_COUNT': '{{messageCount}} Messages',
+            Language: 'Language',
+            Languages: {
+                English: 'English',
+                Spanish: 'Spanish',
+                French: 'French'
+            }
         };
         var dutch = {
             'TITLE': 'Hallo',
             'FOO': 'Dies ist ein Absatz',
             'SPLASH_MSG': 'Testing . . .',
-            'MESSAGE_COUNT': '{{messageCount}} Messages'
+            'MESSAGE_COUNT': '{{messageCount}} Messages',
+            Language: 'Language',
+            Languages: {
+                English: 'English',
+                Spanish: 'Spanish',
+                French: 'French'
+            }
         };
         
         $translateProvider.translations('en', english)
         .translations('de', dutch)
-        .preferredLanguage('es')
+        .preferredLanguage('en')
         .fallbackLanguage('en')
         .useSanitizeValueStrategy('sanitize');
         
