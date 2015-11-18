@@ -1,0 +1,18 @@
+{
+    "Title": "Internationalization",
+    "Language": "Language",
+    "Languages": {
+        "English": "English",
+        "Spanish": "Spanish",
+        "French": "French"
+    },
+    "CreatedBy": "Created by John Papa",
+    "First_Name": "First Name",
+    "Last_Name": "Last Name",
+    "Age": "Age",
+    "Location": "Location",
+    "Messages": "Messages",
+    "People": "People",
+    "SPLASH_MSG": "Testing . . .",
+    "MESSAGE_COUNT": "{{messageCount}} Messages"
+}

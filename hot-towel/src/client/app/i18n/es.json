@@ -1,0 +1,18 @@
+{
+    "Title": "Internacionalización",
+    "Language": "Idioma",
+    "Languages": {
+        "English": "Inglés",
+        "Spanish": "Español",
+        "French": "Francés"
+    },
+    "CreatedBy": "Creado por Juan Padre",
+    "First_Name": "Nombre De Pila",
+    "Last_Name": "Apellido",
+    "Age": "Edad",
+    "Location": "Ubicación",
+    "Messages": "Mensajes",
+    "People": "Gente",
+    "SPLASH_MSG": "Testing . . .",
+    "MESSAGE_COUNT": "{{messageCount}} Messages"
+}
