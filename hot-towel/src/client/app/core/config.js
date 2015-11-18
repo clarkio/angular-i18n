@@ -51,11 +51,15 @@
             }
         };
         
-        $translateProvider.translations('en', english)
-        .translations('de', dutch)
-        .preferredLanguage('en')
-        .fallbackLanguage('en')
-        .useSanitizeValueStrategy('sanitize');
+        $translateProvider
+            .translations('en', english)
+            .preferredLanguage('en')
+            .fallbackLanguage('en')
+            .useStaticFilesLoader({
+                prefix: '/app/i18n/',
+                suffix: '.json'
+            })
+            .useSanitizeValueStrategy('sanitize');
         
         if ($logProvider.debugEnabled) {
             $logProvider.debugEnabled(true);
@@ -63,5 +67,19 @@
         exceptionHandlerProvider.configure(config.appErrorPrefix);
         routerHelperProvider.configure({docTitle: config.appTitle + ': '});
     }
+    
+    /* @ngInject */
+    core.run(function ($rootScope, $translate) {
+        $rootScope.$on('$translatePartialLoaderStructureChanged', function () {
+            console.log('Partial Structure Changed!');
+            // $translate.refresh('en');
+        });
+        $rootScope.$on('$translateChangeSuccess', function () {
+            console.log('Translation Change Success!');
+        });
+        $rootScope.$on('$translateChangeError', function () {
+            console.log('Translation Change ERROR!!!!');
+        });
+    });
 
 })();
