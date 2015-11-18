@@ -59,6 +59,7 @@
                 prefix: '/app/i18n/',
                 suffix: '.json'
             })
+            .useMissingTranslationHandlerLog()
             .useSanitizeValueStrategy('sanitize');
         
         if ($logProvider.debugEnabled) {
