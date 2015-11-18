@@ -52,6 +52,7 @@
         };
         
         $translateProvider
+            .useMissingTranslationHandlerLog()
             .translations('en', english)
             .preferredLanguage('en')
             .fallbackLanguage('en')
@@ -59,7 +60,6 @@
                 prefix: '/app/i18n/',
                 suffix: '.json'
             })
-            .useMissingTranslationHandlerLog()
             .useSanitizeValueStrategy('sanitize');
         
         if ($logProvider.debugEnabled) {
