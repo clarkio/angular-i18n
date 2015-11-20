@@ -8,14 +8,28 @@
                             <div class="pull-left"><i class="fa fa-plane"></i></div>
                             <div class="datas-text pull-right">
                                 <span class="bold">May 18 - 19, 2015</span> Castle Resort, Neverland
+                                <!--<span class="bold" translate>Conference_Date</span> Castle Resort, Neverland-->
                             </div>
                             <div class="clearfix"></div>
                         </li>
-
                         <li class="borange">
                             <div class="pull-left"><i class="fa fa-envelope"></i></div>
                             <div class="datas-text pull-right">
-                                <span class="bold" translate="MESSAGE_COUNT" translate-values="{messageCount: vm.messageCount}"></span>
+                                <!--<span class="bold">72 Messages</span>-->
+                                <span class="bold" translate="Message_Count" 
+                                    translate-values="{messageCount: vm.messageCount}"
+                                    translate-interpolation="messageformat">
+                                </span>
+                            </div>
+                            <div class="clearfix"></div>
+                        </li>
+                        <li class="bgreen">
+                            <div class="pull-left"><i class="fa fa-envelope"></i></div>
+                            <div class="datas-text pull-right">
+                                <!--<span class="bold">Brian is logged in</span>-->
+                                <span class="bold" translate="Greeting" 
+                                    translate-values="{name: vm.name}">
+                                </span>
                             </div>
                             <div class="clearfix"></div>
                         </li>
@@ -36,6 +50,10 @@
                                         <th>Last Name</th>
                                         <th>Age</th>
                                         <th>Location</th>
+                                        <!--<th translate>First_Name</th>
+                                        <th translate="Last_Name"></th>
+                                        <th>{{ 'Age' | translate }}</th>
+                                        <th translate>Location</th>-->
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -54,12 +72,12 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <!--<div class="row">
                 Items for Sale!
                 <div ng-repeat="item in vm.items">
                     <div ht-widget-towel name="{{item.name}}" price="{{item.price}}"></div>
                 </div>
-            </div>
+            </div>-->
         </div>
     </section>
 </section>

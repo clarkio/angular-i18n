@@ -6,13 +6,17 @@
         "Spanish": "Español",
         "French": "Francés"
     },
-    "CreatedBy": "Creado por Juan Padre",
+    "Created_By": "Creado por Juan Padre",
     "First_Name": "Nombre De Pila",
     "Last_Name": "Apellido",
     "Age": "Edad",
     "Location": "Ubicación",
     "Messages": "Mensajes",
     "People": "Gente",
-    "SPLASH_MSG": "Testing . . .",
-    "MESSAGE_COUNT": "{{messageCount}} Messages"
+    "Splash_Msg": "Cargando . . .",
+    "Message_Count": "{messageCount, plural, =0{No Hay Mensajes} one{1 Mensaje} other{# Mensajes}}",
+    "Conference_Date": "18 a 19 mayo, 2015",
+    "Dashboard": "Salpicadero",
+    "Admin": "Administración",
+    "Greeting": "{{name}} se registra en"
 }

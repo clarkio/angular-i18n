@@ -27,33 +27,50 @@
         
         console.log('USER LANGUAGE!!!', navigator.language);
         var english = {
-            'TITLE': 'Hello',
-            'FOO': 'This is a paragraph',
-            'SPLASH_MSG': 'Loading...',
-            'MESSAGE_COUNT': '{{messageCount}} Messages',
-            Language: 'Language',
-            Languages: {
-                English: 'English',
-                Spanish: 'Spanish',
-                French: 'French'
-            }
+            'Title': 'Internationalization',
+            'Splash_Msg': 'Loading . . .',
+            'Message_Count': '{messageCount, plural, =0{No Messages} one{1 Message} other{# Messages}}',
+            'Language': 'Language',
+            'Languages': {
+                'English': 'English',
+                'Spanish': 'Spanish',
+                'French': 'French'
+            },
+            'Created_By': 'Created by John Papa',
+            'First_Name': 'First Name',
+            'Last_Name': 'Last Name',
+            'Age': 'Age',
+            'Location': 'Location',
+            'Conference_Date': 'May 18 - 19, 2015',
+            'Dashboard': 'Dashboard',
+            'Admin': 'Admin',
+            'Greeting': '{{name}} is logged in'
         };
-        var dutch = {
-            'TITLE': 'Hallo',
-            'FOO': 'Dies ist ein Absatz',
-            'SPLASH_MSG': 'Testing . . .',
-            'MESSAGE_COUNT': '{{messageCount}} Messages',
-            Language: 'Language',
-            Languages: {
-                English: 'English',
-                Spanish: 'Spanish',
-                French: 'French'
-            }
+        var spanish = {
+            'Title': 'Internacionalización',
+            'Splash_Msg': 'Cargando . . .',
+            'Message_Count': '{messageCount, plural, =0{No Hay Mensajes} one{1 Mensaje} other{# Mensajes}}',
+            'Language': 'Idioma',
+            'Languages': {
+                'English': 'Inglés',
+                'Spanish': 'Español',
+                'French': 'Francés'
+            },
+            'Created_By': 'Creado por Juan Padre',
+            'First_Name': 'Nombre De Pila',
+            'Last_Name': 'Apellido',
+            'Age': 'Edad',
+            'Location': 'Ubicación',
+            'Dashboard': 'Salpicadero',
+            'Admin': 'Administración',
+            'Greeting': '{{name}} se registra en'            
         };
         
         $translateProvider
+            .addInterpolation('$translateMessageFormatInterpolation')
             .useMissingTranslationHandlerLog()
             .translations('en', english)
+            .translations('es', spanish)
             .preferredLanguage('en')
             .fallbackLanguage('en')
             .useStaticFilesLoader({

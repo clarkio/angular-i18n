@@ -17,6 +17,7 @@
             text: 'Created by John Papa',
             link: 'http://twitter.com/john_papa'
         };
+        vm.author = 'Brian Clark';
 
         activate();
 
