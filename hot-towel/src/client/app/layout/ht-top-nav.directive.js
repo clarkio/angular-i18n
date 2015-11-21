@@ -20,7 +20,7 @@
         };
 
         /* @ngInject */
-        function TopNavController($translate, LANG) {
+        function TopNavController($translate) {
             var vm = this;
             vm.changeLanguage = changeLanguage;
 

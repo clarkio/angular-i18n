@@ -8,7 +8,7 @@
     DashboardController.$inject = ['$q', 'dataservice', 'logger', '$translatePartialLoader', '$translate'];
     /* @ngInject */
     function DashboardController($q, dataservice, logger, $translatePartialLoader, $translate) {
-        $translatePartialLoader.addPart('dashboard');
+        // $translatePartialLoader.addPart('dashboard');
 
         var vm = this;
         vm.news = {
@@ -41,10 +41,10 @@
         function activate() {
             var promises = [getMessageCount(), getPeople()];
             return $q.all(promises).then(function () {
-                $translate('Activation_Dash').then(function (translation) {
-                    logger.info(translation);
-                });
-                // logger.info('Activated Dashboard View');
+                // $translate('Activation_Dash').then(function (translation) {
+                //     logger.info(translation);
+                // });
+                logger.info('Activated Dashboard View');
             });
         }
 
