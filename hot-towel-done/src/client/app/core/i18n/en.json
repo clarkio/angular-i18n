@@ -1,0 +1,13 @@
+{
+    "Title": "Internationalization",
+    "Language": "Language",
+    "Languages": {
+        "English": "English",
+        "Spanish": "Spanish",
+        "French": "French"
+    },
+    "Created_By": "Created by John Papa",
+    "Splash_Msg": "Loading . . .",
+    "Dashboard": "Dashboard",
+    "Admin": "Admin"
+}

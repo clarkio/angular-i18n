@@ -1,0 +1,13 @@
+{
+    "Title": "Internacionalización",
+    "Language": "Idioma",
+    "Languages": {
+        "English": "Inglés",
+        "Spanish": "Español",
+        "French": "Francés"
+    },
+    "Created_By": "Creado por Juan Padre",
+    "Splash_Msg": "Cargando . . .",
+    "Dashboard": "Tablero",
+    "Admin": "Administración"
+}

@@ -1,0 +1,13 @@
+{
+    "First_Name": "Nombre De Pila",
+    "Last_Name": "Apellido",
+    "Age": "Edad",
+    "Location": "Ubicación",
+    "Messages": "Mensajes",
+    "People": "Gente",
+    "Message_Count": "{messageCount, plural, =0{No Hay Mensajes} one{1 Mensaje} other{# Mensajes}}",
+    "Conference_Date": "18 a 19 mayo, 2015",
+    "Dashboard": "Tablero",
+    "Greeting": "{{name}} se registra en",
+    "Activation_Dash": "Activado Tablero Ver"
+}

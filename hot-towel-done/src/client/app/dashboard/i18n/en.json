@@ -1,0 +1,13 @@
+{
+    "First_Name": "First Name",
+    "Last_Name": "Last Name",
+    "Age": "Age",
+    "Location": "Location",
+    "Messages": "Messages",
+    "People": "People",
+    "Message_Count": "{messageCount, plural, =0{No Messages} one{1 Message} other{# Messages}}",
+    "Conference_Date": "May 18 - 19, 2015",
+    "Dashboard": "Dashboard",
+    "Greeting": "{{name}} is logged in",
+    "Activation_Dash": "Activated Dashboard View"
+}
