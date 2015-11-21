@@ -8,18 +8,20 @@
     AdminController.$inject = ['logger', '$translatePartialLoader', '$translate'];
     /* @ngInject */
     function AdminController(logger, $translatePartialLoader, $translate) {
-        $translatePartialLoader.addPart('admin');
-        var lang = window.localStorage.getItem('LANG');
-        console.log('Current locale is: ', lang);
-        $translate.refresh(lang);
-
         var vm = this;
         vm.title = 'Admin';
 
         activate();
 
         function activate() {
-            logger.info('Activated Admin View');
+            $translatePartialLoader.addPart('admin');
+            var lang = window.localStorage.getItem('LANG');
+            console.log('Current locale is: ', lang);
+            $translate.refresh(lang);
+            $translate('Activation_Admin').then(function (translation) {
+                logger.info(translation);
+             });
+            // logger.info('Activated Admin View');
         }
     }
 })();

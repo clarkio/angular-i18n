@@ -42,13 +42,13 @@
             // .translations('es', spanish)
             .preferredLanguage(storedLang)
             .fallbackLanguage('en')
-            // .useStaticFilesLoader({
-            //     prefix: '/app/i18n/',
-            //     suffix: '.json'
-            // })
-            .useLoader('$translatePartialLoader', {
-                urlTemplate: 'app/{part}/i18n/{lang}.json'
+            .useStaticFilesLoader({
+                prefix: '/app/i18n/',
+                suffix: '.json'
             })
+            // .useLoader('$translatePartialLoader', {
+            //     urlTemplate: 'app/{part}/i18n/{lang}.json'
+            // })
             .useSanitizeValueStrategy('sanitize');
 
         if ($logProvider.debugEnabled) {

@@ -19,5 +19,7 @@
     "Dashboard": "Salpicadero",
     "Admin": "Administración",
     "Greeting": "{{name}} se registra en",
-    "Admin_Message": "El zorro marrón rápido saltó sobre el perro perezoso"
+    "Admin_Message": "El zorro marrón rápido saltó sobre el perro perezoso",
+    "Activation_Dash": "Activado Dashboard Ver",
+    "Activation_Admin": "Activado Administración Ver"
 }

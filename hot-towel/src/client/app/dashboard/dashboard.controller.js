@@ -40,8 +40,11 @@
 
         function activate() {
             var promises = [getMessageCount(), getPeople()];
-            return $q.all(promises).then(function() {
-                logger.info('Activated Dashboard View');
+            return $q.all(promises).then(function () {
+                $translate('Activation_Dash').then(function (translation) {
+                    logger.info(translation);
+                });
+                // logger.info('Activated Dashboard View');
             });
         }
 
