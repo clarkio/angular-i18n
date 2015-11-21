@@ -19,7 +19,6 @@
 
     core.value('config', config);
 
-    // angular.module('app').value('LOCALE', 'en');
     core.value('LANG', 'en');
 
     core.config(configure);
@@ -27,8 +26,12 @@
     configure.$inject = ['$logProvider', 'routerHelperProvider', 'exceptionHandlerProvider', '$translateProvider', '$translatePartialLoaderProvider'];
     /* @ngInject */
     function configure($logProvider, routerHelperProvider, exceptionHandlerProvider, $translateProvider, $translatePartialLoaderProvider) {
+        var storedLang = window.localStorage.getItem('LANG');
+        if (!storedLang) {
+            window.localStorage.setItem('LANG', 'en');
+            storedLang = 'en';
+        }
 
-        window.localStorage.setItem('LANG', 'en');
         $translatePartialLoaderProvider.addPart('core');
         $translatePartialLoaderProvider.addPart('dashboard');
 
@@ -37,7 +40,7 @@
             .useMissingTranslationHandlerLog()
             // .translations('en', english)
             // .translations('es', spanish)
-            .preferredLanguage('en')
+            .preferredLanguage(storedLang)
             .fallbackLanguage('en')
             // .useStaticFilesLoader({
             //     prefix: '/app/i18n/',
