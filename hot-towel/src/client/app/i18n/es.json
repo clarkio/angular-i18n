@@ -16,10 +16,10 @@
     "Splash_Msg": "Cargando . . .",
     "Message_Count": "{messageCount, plural, =0{No Hay Mensajes} one{1 Mensaje} other{# Mensajes}}",
     "Conference_Date": "18 a 19 mayo, 2015",
-    "Dashboard": "Salpicadero",
+    "Dashboard": "Tablero",
     "Admin": "Administración",
     "Greeting": "{{name}} se registra en",
     "Admin_Message": "El zorro marrón rápido saltó sobre el perro perezoso",
-    "Activation_Dash": "Activado Dashboard Ver",
+    "Activation_Dash": "Activado Tablero Ver",
     "Activation_Admin": "Activado Administración Ver"
 }

@@ -113,7 +113,7 @@
         //     'Last_Name': 'Apellido',
         //     'Age': 'Edad',
         //     'Location': 'Ubicación',
-        //     'Dashboard': 'Salpicadero',
+        //     'Dashboard': 'Tablero',
         //     'Admin': 'Administración',
         //     'Greeting': '{{name}} se registra en',
         //     'Admin_Message': 'El zorro marrón rápido saltó sobre el perro perezoso'
