@@ -5,15 +5,17 @@
         .module('app.dashboard')
         .controller('DashboardController', DashboardController);
 
-    DashboardController.$inject = ['$q', 'dataservice', 'logger'];
+    DashboardController.$inject = ['$q', 'dataservice', 'logger', '$translatePartialLoader', '$translate'];
     /* @ngInject */
-    function DashboardController($q, dataservice, logger) {
+    function DashboardController($q, dataservice, logger, $translatePartialLoader, $translate) {
+        $translatePartialLoader.addPart('dashboard');
+
         var vm = this;
         vm.news = {
             title: 'hot-towel',
             description: 'Hot Towel Angular is a SPA template for Angular developers.'
         };
-        vm.name = 'Brian';
+        vm.name = 'Mike';
         vm.messageCount = 0;
         vm.people = [];
         vm.title = 'Dashboard';
@@ -31,6 +33,8 @@
                 price: '5.00'
             }
         ];
+        vm.date = new Date();
+        vm.money = 1000;
 
         activate();
 

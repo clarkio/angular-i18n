@@ -18,5 +18,6 @@
     "Conference_Date": "18 a 19 mayo, 2015",
     "Dashboard": "Salpicadero",
     "Admin": "Administración",
-    "Greeting": "{{name}} se registra en"
+    "Greeting": "{{name}} se registra en",
+    "Admin_Message": "El zorro marrón rápido saltó sobre el perro perezoso"
 }

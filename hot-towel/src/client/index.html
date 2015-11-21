@@ -5,9 +5,9 @@
     <style>
         /* This helps the ng-show/ng-hide animations start at the right place. */
         /* Since Angular has this but needs to load, this gives us the class early. */
-        
-        .ng-hide { 
-            display: none!important; 
+
+        .ng-hide {
+            display: none!important;
         }
     </style>
     <title ng-bind="title">hot-towel</title>
@@ -58,11 +58,11 @@
     <script src="/bower_components/toastr/toastr.js"></script>
     <script src="/bower_components/angular-animate/angular-animate.js"></script>
     <script src="/bower_components/angular-translate/angular-translate.js"></script>
-    <script src="/bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
     <script src="/bower_components/angular-translate-handler-log/angular-translate-handler-log.js"></script>
     <script src="/bower_components/messageformat/messageformat.js"></script>
-    <script src="bower_components/messageformat/locale/es.js"></script>
     <script src="/bower_components/angular-translate-interpolation-messageformat/angular-translate-interpolation-messageformat.js"></script>
+    <script src="/bower_components/angular-translate-loader-partial/angular-translate-loader-partial.js"></script>
+    <script src="/bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -101,5 +101,6 @@
     <!-- inject:templates:js -->
     <!-- endinject -->
     <!-- endbuild -->
+    <script src="/bower_components/messageformat/locale/es.js"></script>
 </body>
 </html>
