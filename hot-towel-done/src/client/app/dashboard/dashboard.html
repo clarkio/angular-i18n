@@ -7,7 +7,7 @@
                         <li class="blightblue">
                             <div class="pull-left"><i class="fa fa-plane"></i></div>
                             <div class="datas-text pull-right">
-                                <span class="bold" translate>Conference_Date</span> Castle Resort, Neverland
+                                <span class="bold" translate="Conference_Date">May 18 - 19, 2015</span> Castle Resort, Neverland
                             </div>
                             <div class="clearfix"></div>
                         </li>
@@ -15,18 +15,15 @@
                             <div class="pull-left"><i class="fa fa-envelope"></i></div>
                             <div class="datas-text pull-right">
                                 <span class="bold" translate="Message_Count"
-                                    translate-values="{messageCount: vm.messageCount}"
-                                    translate-interpolation="messageformat">
-                                </span>
+                                        translate-values="{messageCount: vm.messageCount}"
+                                        translate-interpolation="messageformat">72 Messages</span>
                             </div>
                             <div class="clearfix"></div>
                         </li>
                         <li class="bgreen">
                             <div class="pull-left"><i class="fa fa-envelope"></i></div>
                             <div class="datas-text pull-right">
-                                <span class="bold" translate="Greeting"
-                                    translate-values="{name: vm.name}">
-                                </span>
+                                <span class="bold" translate="Greeting" translate-value-name="John">Mike is logged in</span>
                             </div>
                             <div class="clearfix"></div>
                         </li>
@@ -44,7 +41,7 @@
                                 <thead>
                                     <tr>
                                         <th translate>First_Name</th>
-                                        <th translate="Last_Name"></th>
+                                        <th translate="Last_Name">Last Name</th>
                                         <th>{{ 'Age' | translate }}</th>
                                         <th translate>Location</th>
                                     </tr>
@@ -65,12 +62,6 @@
                     </div>
                 </div>
             </div>
-            <!--<div class="row">
-                Items for Sale!
-                <div ng-repeat="item in vm.items">
-                    <div ht-widget-towel name="{{item.name}}" price="{{item.price}}"></div>
-                </div>
-            </div>-->
         </div>
     </section>
 </section>

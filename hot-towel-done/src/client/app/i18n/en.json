@@ -20,6 +20,6 @@
     "Admin": "Admin",
     "Greeting": "{{name}} is logged in",
     "Admin_Message": "The quick brown fox jumped over the lazy dog",
-    "Activation_Dash": "Activaded Dashboard View",
+    "Activation_Dash": "Activated Dashboard View",
     "Activation_Admin": "Activated Admin View"
 }

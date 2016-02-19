@@ -7,31 +7,30 @@
             <span class="icon-bar"></span>
         </a>
     </div>
+
+
     <div class="navbar-collapse collapse">
-        <div class="pull-left navbar-logo">
+        <div class="pull-right navbar-logo">
             <div class="dropdown nav navbar-nav pull-left">
-                <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" translate>
-                     Language
+                <button id="dLabel" type="button" data-toggle="dropdown" translate="Language">
                     <span class="caret"></span>
                 </button>
-                <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                <ul class="dropdown-menu" role="menu">
                     <li>
-                        <a ng-click="vm.changeLanguage('en')" translate>
-                            Languages.English
-                        </a>
+                        <a ng-click="vm.changeLanguage('en')" translate>Languages.English</a>
                     </li>
                     <li>
-                        <a ng-click="vm.changeLanguage('es')" translate>
-                            Languages.Spanish
-                        </a>
+                        <a ng-click="vm.changeLanguage('es')" translate>Languages.Spanish</a>
+                    </li>
+                    <li>
+                        <a ng-click="vm.changeLanguage('xx')">Language X</a>
                     </li>
                 </ul>
             </div>
-        </div>
-        <div class="pull-right navbar-logo">
             <ul class="nav navbar-nav pull-right">
                 <li>
                     <a ng-href="{{vm.navline.link}}" target="_blank" translate="Created_By">
+                        {{vm.navline.text}}
                     </a>
                 </li>
                 <li class="dropdown dropdown-big">

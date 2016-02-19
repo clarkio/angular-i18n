@@ -15,7 +15,7 @@
 
         return service;
 
-        function getMessageCount() { return $q.when(10); }
+        function getMessageCount() { return $q.when(72); }
 
         function getPeople() {
             return $http.get('/api/people')
