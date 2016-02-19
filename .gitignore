@@ -6,4 +6,8 @@ bower_components/
 # other
 .tmp
 /hot-towel/report/
+/hot-towel-done/report/
+hot-towel/report/
+hot-towel-done/report/
 /hot-towel/.editorconfig
+/hot-towel-done/.editorconfig
