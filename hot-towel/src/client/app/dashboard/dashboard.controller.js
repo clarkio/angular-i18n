@@ -18,22 +18,7 @@
         vm.messageCount = 0;
         vm.people = [];
         vm.title = 'Dashboard';
-        vm.items = [
-            {
-                name: 'Beach Towel',
-                price: '20.00'
-            },
-            {
-                name: 'Bath Towel',
-                price: '15.00'
-            },
-            {
-                name: 'Gym Towel',
-                price: '5.00'
-            }
-        ];
-        vm.date = new Date();
-        vm.money = 1000;
+
 
         activate();
 
