@@ -19,7 +19,6 @@
         vm.people = [];
         vm.title = 'Dashboard';
 
-
         activate();
 
         function activate() {
